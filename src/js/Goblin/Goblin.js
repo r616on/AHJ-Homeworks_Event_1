@@ -1,18 +1,18 @@
-import goblinNmg from './img/goblin.png';
-import getRandom from '../libs/random';
+import goblinNmg from "./img/goblin.png";
+import getRandom from "../libs/random";
 
 export default class Goblin {
   constructor(element) {
-    if (typeof element === 'string') {
+    if (typeof element === "string") {
       this.element = document.querySelector(element);
     }
-    this.hole = this.element.querySelectorAll('.hole');
+    this.hole = this.element.querySelectorAll(".hole");
   }
 
   randomHole() {
-    const item = document.createElement('img');
+    const item = document.createElement("img");
     item.src = goblinNmg;
-    item.classList.add('goblin');
+    item.classList.add("goblin");
     // this.hole[4].append(item);
     let index = -1;
     const interval = setInterval(() => {
