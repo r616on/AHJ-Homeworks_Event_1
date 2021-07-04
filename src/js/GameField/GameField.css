@@ -1,0 +1,14 @@
+.hole-game {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.hole {
+  width: 110px;
+  height: 110px;
+  margin: 0 15px 30px;
+  background: gray;
+  border-radius: 50%;
+}
