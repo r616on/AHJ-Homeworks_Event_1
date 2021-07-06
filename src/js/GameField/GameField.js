@@ -1,8 +1,6 @@
 export default class GameField {
-  constructor(element) {
-    if (typeof element === "string") {
-      this.element = document.querySelector(element);
-    }
+  constructor() {
+    this.element = document.querySelector(".hole-game");
   }
 
   generate(num) {
